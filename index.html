@@ -9,11 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
@@ -26,30 +28,49 @@
             color: #fff;
             text-decoration: none;
             padding: 0 10px;
+            margin: 0 5px;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            max-width: 1200px;
+            max-width: 960px;
             margin: 20px auto;
             padding: 0 20px;
         }
-        h1 {
-            text-align: center;
-            margin-top: 40px;
+        h1, h2 {
+            color: #333;
         }
-        p {
-            line-height: 1.6;
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
+        }
+        input[type="date"] {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #666;
         }
     </style>
 </head>
@@ -57,48 +78,33 @@
     <header>
         <h1>Stop Smoking Website</h1>
     </header>
-   <nav>
-    <a href="#whyquit">
-        <img src="why_quit_icon.png" alt="Why Quit Icon" width="30" height="30">
-        Why Quit
-    </a>
-    <a href="#howtoquit">
-        <img src="how_to_quit_icon.png" alt="How to Quit Icon" width="30" height="30">
-        How to Quit
-    </a>
-    <a href="#benefits">
-        <img src="benefits_icon.png" alt="Benefits Icon" width="30" height="30">
-        Benefits
-    </a>
-    <a href="#resources">
-        <img src="resources_icon.png" alt="Resources Icon" width="30" height="30">
-        Resources
-    </a>
-    <a href="#contact">
-        <img src="contact_icon.png" alt="Contact Us Icon" width="30" height="30">
-        Contact Us
-    </a>
-</nav>
+    <nav>
+        <a href="#whyquit">Why Quit</a>
+        <a href="#howtoquit">How to Quit</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
     <div class="container">
         <section id="whyquit">
             <h2>Why Quit Smoking</h2>
-            <p>Here you can describe the health risks associated with smoking and the benefits of quitting.</p>
+            <p>Smoking harms nearly every organ of the body and diminishes overall health. It causes various diseases and reduces the health of smokers in general. Quitting smoking has both immediate and long-term benefits for you and your loved ones.</p>
         </section>
         <section id="howtoquit">
             <h2>How to Quit</h2>
-            <p>Offer practical tips and strategies for quitting smoking.</p>
+            <p>Quitting smoking is challenging, but it is possible. It's essential to develop a plan that works for you. Strategies such as setting a quit date, seeking support from friends and family, and using nicotine replacement therapies or medications can help you succeed.</p>
         </section>
         <section id="benefits">
             <h2>Benefits of Quitting</h2>
-            <p>Detail the positive changes that occur in the body after quitting smoking.</p>
+            <p>Quitting smoking improves your health and quality of life. Within minutes of quitting, your heart rate and blood pressure drop. Within days, your sense of taste and smell improve. Over time, your risk of developing smoking-related diseases decreases, and you save money.</p>
         </section>
         <section id="resources">
             <h2>Resources</h2>
-            <p>Provide links to additional resources such as hotlines, support groups, and smoking cessation programs.</p>
+            <p>There are many resources available to help you quit smoking. These include quitlines, online support groups, mobile apps, and smoking cessation programs. Find the support and resources that work best for you.</p>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Provide contact information for users to reach out with questions, feedback, or inquiries.</p>
+            <p>If you have questions, feedback, or need support on your quit journey, please don't hesitate to reach out. We're here to help you every step of the way.</p>
         </section>
         <section id="tracker">
             <h2>Smoking Cessation Tracker</h2>
@@ -126,4 +132,3 @@
     </script>
 </body>
 </html>
-
