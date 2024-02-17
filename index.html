@@ -85,9 +85,30 @@
             <h2>Contact Us</h2>
             <p>Provide contact information for users to reach out with questions, feedback, or inquiries.</p>
         </section>
+        <section id="tracker">
+            <h2>Smoking Cessation Tracker</h2>
+            <label for="quitDate">Enter your quit date:</label>
+            <input type="date" id="quitDate">
+            <button onclick="calculateDays()">Calculate Days Smoke-Free</button>
+            <p id="result"></p>
+        </section>
     </div>
     <footer>
         <p>&copy; 2024 Stop Smoking Website</p>
     </footer>
+
+    <!-- JavaScript Code -->
+    <script>
+        function calculateDays() {
+            var quitDateInput = document.getElementById('quitDate').value;
+            var quitDate = new Date(quitDateInput);
+            var currentDate = new Date();
+            var timeDifference = currentDate.getTime() - quitDate.getTime();
+            var daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+
+            document.getElementById('result').innerHTML = "You have been smoke-free for " + daysDifference + " days!";
+        }
+    </script>
 </body>
 </html>
+
